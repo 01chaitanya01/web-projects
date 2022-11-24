@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iron web</title>
+</head>
+<style>
+    body{
+    background: linear-gradient(to bottom left,  #FCC866 60% , #6F1513 0%);
+    height: 100vh;
+    }
+#bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+.logo{
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid red; */
+}   
+.nev{
+    position: absolute;
+    display: flex;
+    /* border: 2px solid red; */
+    top: 50px;
+    left: 200px;
+}
+.nev li {
+    padding: 0px 10px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    font-size: 20px;
+}  
+.nev a{ 
+    text-decoration: none;
+    color: rgb(96, 13, 13);
+} 
+.nev a:hover{
+    text-decoration: underline;
+}
+.nev input{
+    border: 4px solid #6F1513   ;
+    background-color: transparent;
+    /* color: #ffed4b; */
+    font-size: 17px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 200px;
+}
+.nev button{
+    border: 4px solid #6F1513   ;
+    font-size: 17px;
+    width: 90px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.title{
+    position: absolute;
+    display: inline-block;
+    /* border: 1px solid red; */
+    top: 100px;
+    left: 150px;
+    font-size: 30px;
+    color:#6F1513;
+}
+
+@media (max-width:400px){
+    #bg{
+        display: none;
+}
+.logo{
+    left: 10px;
+    top: 13px;
+    width: 30px;
+    height: 30px;
+}
+.nev{
+    left: 0px;
+    top: 30px;
+}
+.nev li{
+    padding: 6px ; 
+    padding-bottom: 7px;
+    font-size: 16px;
+}
+.nev input{
+    width: 160px;
+}
+.nev .ser{
+    display: none;
+}
+.title{
+    left: 8px;
+    font-size: 20px;
+    }
+}
+</style>
+<body>
+    <img src="ironmanbg.jpg" alt="" id="bg">
+    <img src="arclogo.png" alt="" class="logo">
+    <div class="nev">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="ser" >Series</a></li>
+                <a href="#"><input type="text" placeholder="Search any movies"></a><a href="#"><button>search</button></a>
+            </ul>
+    </div>
+    <div class="title">
+        <h1>The Iron Man</h1>
+    </div>
+</body>
+</html> 

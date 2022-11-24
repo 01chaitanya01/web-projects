@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="eg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mento</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color: #4eb1b3;
+        background-image: url(background.png);
+        padding: auto;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        font-family: 'Fredoka One', cursive;
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .left div {
+        text-align: center;
+        color: #95600c;
+        font-size: 33px;
+    }
+
+    .left img {
+        width: 80px;
+    }
+
+    .mid {
+        display: block;
+        width: 35%;
+        margin: 50px 250px;
+        /* border: 2px solid green; */
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 50px;
+        /* border: 2px solid purple; */
+
+    }
+
+    .navbar {
+        display: inline;
+    }
+
+    .navbar li {
+        display: inline;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: #95600c;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: #ff7504;
+        text-decoration: underline;
+    }
+    
+    .btn {
+        transition: 0.5s;
+        margin: 0px 20px;
+        background-color: #f372a1;
+        padding: 6px 8px;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: 'Fredoka One', cursive;
+        border: 3px solid #4eb1b3;
+    }
+
+    .btn:hover {
+        background-color: #4eb1b3;
+        border: 3px solid #fefefe;
+    }
+
+    .container {
+        border: 5px solid #3c797a;
+        background-color: aliceblue;
+        display: block;
+        width: 20%;
+        padding: 40px 50px;
+        margin: 150px 100px;
+        border-radius: 15px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 5px;
+        border: 2px solid #3c797a;
+        border-radius: 5px;
+        margin: 33px auto;
+        font-size: 15px;
+    }
+
+    .container h1 {
+        color: #3c797a;
+        display: block;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .container button {
+        display: block;
+        width: 30%;
+        margin: 30px auto;
+    }
+
+    .box {
+        color: #3c797a;
+        display: inline;
+        width: 0px;
+        padding: 0px;
+        margin: 50px auto;
+        /* border:3px solid #ff7504; */
+    }
+
+    .forgot a {
+        display: block inline;
+        text-decoration: none;
+        /* border:3px solid #ff7504; */
+        margin-left: 130px;
+    }
+
+    .forgot a:hover {
+        color: #3c797a;
+        text-decoration: underline;
+    }
+
+    .sign {
+        /* border:3px solid #ff7504; */
+        display: block;
+        padding: 10px;
+    }
+
+    .sign a {
+        text-decoration: none;
+    }
+
+    .sign a:hover {
+        color: #3c797a;
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>MENTO</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar" class="active">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Mentor</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Contact us now</button>
+            <button class="btn">Join Now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email ID">
+            </div>
+            <div class="form-group">
+                <input type="password" name="" placeholder="Password">
+            </div>
+            <div class="box">
+                <input type="checkbox" name="" placeholder=""> Remember me?
+            </div>
+            <button class="btn">LOGING</button>
+            <div class="forgot">
+                <a href="#">Forgot password ?</a>
+            </div>
+            <div class="sign">
+                Don't have an account <a href="#">sign in</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
